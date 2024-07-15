@@ -1,0 +1,10 @@
+vllm
+sentence_transformers
+pyspellchecker
+keras
+Keras-Preprocessing
+tensorflow
+textstat
+sentence-transformers
+tf-keras
+nevergrad
