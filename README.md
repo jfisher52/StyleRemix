@@ -5,7 +5,7 @@ This repository contains the code and the scripts to reproduce the experiments f
 **STYLEREMIX**, is an adaptive and interpretable obfuscation method that perturbs specific, fine-grained style elements of the original input text. STYLEREMIX uses pre-trained Low Rank Adaptation (LoRA) modules to rewrite inputs along various stylistic axes (e.g., formality, length) while maintaining low computational costs. 
 
 <p align="center">
-<img src="styleremix_overview.jpeg" width="275">
+<img src="styleremix_overview.jpg" width="275">
 </p>
 
 In this paper we demonstrate the effectiveness of STYlEREMIX on four obfuscation datasets comprised of presidential speeches (SPEECHES), fiction writing (NOVELS), academic articles (SCHOLAR) and diary-style writings (BLOG). When applied in combination with a LLAMA-3 7B model, STYLEREMIX outperforms state-of-the-art authorship baselines and much larger LLMs on an array of domains on both automatic and human evaluation.
