@@ -14,13 +14,13 @@ In this repo, we provide code which implements STYLEREMIX on a LLAMA-3 8B model 
 
 ## Dependencies
 The code is written in Python and the dependencies are:
-- Python >= 3.10.10
-- PyTorch >= 2.0.1
-- Huggingface Transformers >= 4.33.3
+- Python >= 3.10.13
+- PyTorch >= 2.1.2
+- Huggingface Transformers >= 4.41.1
 
 **Conda Environment**:
 We recommend using a [conda environment](https://docs.conda.io/en/latest/miniconda.html)
-for Python 3.7.
+for Python 3.10.
 To setup the environment, run
 ```bash
 conda env create --file environment.yml
