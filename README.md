@@ -31,12 +31,12 @@ Finally, install the required packages (make sure you are in the root directory)
 
 ## Resources
 
-All resources (trained models, demo, etc.) have been organized into the following [huggingface collection](https://huggingface.co/datasets/hallisky/AuthorMix). 
+All resources (trained models, demo, etc.) have been organized into the following [huggingface collection](https://huggingface.co/collections/hallisky/authorship-obfuscation-66564c1c1d59bb62eaaf954f). 
     
 ## Datasets
 We use the AuthorMix data which is composed offour different domains, presidential speeches (curated in this paper), fictional novels (curated in this paper), the Extended-Brennan-Greenstadt (Brennan et al., 2012) (amt) and the  Blog Authorship corpus (Schler et al., 2006) (blog), using a range of different authors (3 - 5). All raw datasets can be found under the  `test_data/` folder. Note the file `test_data/AuthorMix` is a torch file with a dictionary containing a key for each domain (Speeches, Novels, AMT, Blog) and the file `test_data/AuthorMix_average_by_author` contains a pre-computed matrix of average automatic evalution by author which is used to choose the weights of the adapters. 
 
-The test dataset can also be downloaded directly from huggingface: [link]([https://huggingface.co/datasets/jrfish/AuthorMix](https://huggingface.co/datasets/hallisky/AuthorMix))
+The test dataset can also be downloaded directly from huggingface: [link](https://huggingface.co/datasets/hallisky/AuthorMix)
 
 ```bash
 from datasets import load_dataset
