@@ -12,26 +12,23 @@ In this paper we demonstrate the effectiveness of STYlEREMIX on four obfuscation
 
 In this repo, we provide code which implements STYLEREMIX on a LLAMA-3 8B model for these four datasets.
 
-## Dependencies
-The code is written in Python and the dependencies are:
-- Python >= 3.10.13
-- PyTorch >= 2.1.2
-- Huggingface Transformers >= 4.41.1
+## Using this Repository
+All code is meant to be run in Python.
 
-**Conda Environment**:
-We recommend using a [conda environment](https://docs.conda.io/en/latest/miniconda.html)
-for Python 3.10.
-To setup the environment, run
-```bash
-conda env create --file environment.yml
-# activate the environment
-conda activate jambalaya_decoding
-```
-**Install Dependencies via Pip**:
-To install dependencies, run
-```bash
-pip install -r requirement.txt
-```
+
+### Setting up the Environment
+To set up the environment to run the code, make sure to have conda installed, then run
+
+    conda create --name obf python=3.10
+
+Then, activate the environment
+
+    conda activate obf
+
+Finally, install the required packages (make sure you are in the root directory).
+
+    pip install -r requirements.txt
+    
 ## Datasets
 We use the StyleMix data which is composed offour different domains, presidential speeches (curated in this paper), fictional novels (curated in this paper), the Extended-Brennan-Greenstadt (Brennan et al., 2012) (amt) and the  Blog Authorship corpus (Schler et al., 2006) (blog), using a range of different authors (3 - 5). All raw datasets can be found under the  `test_data/` folder. Note the file `test_data/StyleMix` is a torch file with a dictionary containing a key for each domain (Speeches, Novels, AMT, Blog) and the file `test_data/StyleMix_average_by_author` contains a pre-computed matrix of average automatic evalution by author which is used to choose the weights of the adapters. 
 
@@ -61,4 +58,8 @@ If you find this repository useful, or you use it in your research, please cite:
 ```
     
 ## Acknowledgements
+
+## Contact
+
+If you have any issues with the repository, questions about the paper, or anything else, please email jrfish@uw.edu and hallisky@uw.edu.
 
