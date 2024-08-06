@@ -38,9 +38,9 @@ We use the AuthorMix data which is composed offour different domains, presidenti
 
 The test dataset can also be downloaded directly from huggingface: [link](https://huggingface.co/datasets/hallisky/AuthorMix)
 
-```bash
+```
 from datasets import load_dataset
-data = load_dataset("jrfish/AuthorMix")
+data = load_dataset("hallisky/AuthorMix")
 ```
 
 
