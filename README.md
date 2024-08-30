@@ -1,6 +1,6 @@
 # StyleRemix: An Intepretable Authorship Obfuscation Method
 This repository contains the code and the scripts to reproduce the experiments from the paper
-[StyleRemix: Interpretable Authorship Obfuscation via Distillation and Perturbation of Style Elements](). 
+[StyleRemix: Interpretable Authorship Obfuscation via Distillation and Perturbation of Style Elements](http://www.arxiv.org/abs/2408.15666). 
 
 **StyleRemix**, is an adaptive and interpretable obfuscation method that perturbs specific, fine-grained style elements of the original input text. StyleRemix uses pre-trained Low Rank Adaptation (LoRA) modules to rewrite inputs along various stylistic axes (e.g., formality, length) while maintaining low computational costs. 
 
@@ -58,7 +58,15 @@ Experimental code for both all domains can be found in the main folder labeled a
 ## Citation
 If you find this repository useful, or you use it in your research, please cite:
 ```
-
+@misc{fisher2024styleremixinterpretableauthorshipobfuscation,
+      title={StyleRemix: Interpretable Authorship Obfuscation via Distillation and Perturbation of Style Elements}, 
+      author={Jillian Fisher and Skyler Hallinan and Ximing Lu and Mitchell Gordon and Zaid Harchaoui and Yejin Choi},
+      year={2024},
+      eprint={2408.15666},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2408.15666}, 
+}
 ```
     
 ## Acknowledgements
