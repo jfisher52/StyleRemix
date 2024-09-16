@@ -1,4 +1,4 @@
-# StyleRemix: An Intepretable Authorship Obfuscation Method
+# StyleRemix: Intepretable Authorship Obfuscation
 This repository contains the code and the scripts to reproduce the experiments from the paper
 [StyleRemix: Interpretable Authorship Obfuscation via Distillation and Perturbation of Style Elements](http://www.arxiv.org/abs/2408.15666). 
 
@@ -8,9 +8,9 @@ This repository contains the code and the scripts to reproduce the experiments f
 <img src="fig1_wide.png" width="80%">
 </p>
 
-In this paper we demonstrate the effectiveness of StyleRemix on four obfuscation datasets comprised of presidential speeches (SPEECHES), fiction writing (NOVELS), academic articles (SCHOLAR) and diary-style writings (BLOG). When applied in combination with a LLAMA-3 7B model, StyleRemix outperforms state-of-the-art authorship baselines and much larger LLMs on an array of domains on both automatic and human evaluation.
+We use StyleRemix for obfuscation on four datasets: presidential speeches, fiction writing, academic articles, and diary-style writings. StyleRemix outperforms state-of-the-art authorship baselines and much larger LLMs on an array of domains on both automatic and human evaluation.
 
-In this repo, we provide code which implements StyleRemix on a LLAMA-3 8B model for these four datasets.
+In this repo, we provide code which implements StyleRemix on a Llama-3 8B model for these four datasets.
 
 ## Using this Repository
 All code is meant to be run in Python.
