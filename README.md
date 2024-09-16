@@ -12,9 +12,7 @@ We use StyleRemix for obfuscation on four datasets: presidential speeches, ficti
 
 In this repo, we provide code which implements StyleRemix on a Llama-3 8B model for these four datasets.
 
-## Using this Repository
-All code is meant to be run in Python.
-
+## QuickStart
 
 ### Setting up the Environment
 To set up the environment to run the code, make sure to have conda installed, then run
@@ -28,6 +26,22 @@ Then, activate the environment
 Finally, install the required packages (make sure you are in the root directory).
 
     pip install -r requirements.txt
+
+### Running StyleRemix on Texts
+
+We include the python file `quickstart.py` which shows how to run StyleRemix on some sample texts. This uses LLama-3 8B as the base model, so you must do inference with a GPU. Style element weights can either be randomly set or randomly initialized; see the argparser for the full options. Finally, feel free to replace the sample texts with your own data.
+
+You can either import the `remix(...)` method into your own code, or you can run this file directly, for example: 
+
+```
+# Example commands to run StyleRemix on text:
+
+# Passing in manually weights for different style elements (higher=more, lower=less, -1 to 1)
+python3 quickstart.py --length 0.7 --sarcasm 0.9
+
+# Randomly set weights for different style elements
+python3 quickstart.py --random_weights --num_random 3
+```
 
 ## Resources
 
@@ -44,7 +58,7 @@ data = load_dataset("hallisky/AuthorMix")
 ```
 
 
-## Experimental Pipeline
+## More Detailed Code: Experimental Pipeline
 Experimental code for both all domains can be found in the main folder labeled as `obfuscate.py`. Each experiment consists of the following four steps:
 
 1. Download Raw Data:  automatic
